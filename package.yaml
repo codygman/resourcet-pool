@@ -1,0 +1,12 @@
+name: resourcet-pool
+version: 0.1.0.0
+maintainer: Brandon Chinn <brandonchinn178@gmail.com>
+
+ghc-options: -Wall
+
+library:
+  source-dirs: src
+  dependencies:
+    - base >= 4.9 && < 5
+    - resource-pool >= 0.2.1.0 && < 0.3
+    - resourcet >= 1.1.2 && < 2
