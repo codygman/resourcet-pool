@@ -4,11 +4,18 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: ebe37686d12d0a46e2daa3f2df49a86ef70ad2665034a798ab63b79eb735af26
+-- hash: 2d32aa59d68effee6a31d7d58ef66938432ceee5a76c7ad845e3715bd287b062
 
 name:           resourcet-pool
 version:        0.1.0.0
+synopsis:       A small library to convert a Pool into an Acquire
+description:    A small library to convert a Pool into an Acquire, allowing
+                one to use the `resourcet` framework with a resource exported
+                as a `Pool`.
+category:       Data, Database, Network, Conduit
 maintainer:     Brandon Chinn <brandonchinn178@gmail.com>
+license:        BSD3
+license-file:   LICENSE
 build-type:     Simple
 
 library

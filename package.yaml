@@ -1,6 +1,14 @@
 name: resourcet-pool
 version: 0.1.0.0
 maintainer: Brandon Chinn <brandonchinn178@gmail.com>
+category: Data, Database, Network, Conduit
+synopsis: A small library to convert a Pool into an Acquire
+description: |
+  A small library to convert a Pool into an Acquire, allowing
+  one to use the `resourcet` framework with a resource exported
+  as a `Pool`.
+license: BSD3
+license-file: LICENSE
 
 ghc-options: -Wall
 
