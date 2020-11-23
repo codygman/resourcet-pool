@@ -9,8 +9,23 @@ description: |
   as a `Pool`.
 license: BSD3
 license-file: LICENSE
+extra-source-files:
+  - README.md
+  - CHANGELOG.md
+
+github: brandonchinn178/resourcet-pool
 
 ghc-options: -Wall
+when:
+  - condition: impl(ghc >= 8.0)
+    ghc-options:
+      - -Wcompat
+      - -Wincomplete-record-updates
+      - -Wincomplete-uni-patterns
+      - -Wnoncanonical-monad-instances
+  - condition: impl(ghc < 8.8)
+    ghc-options:
+      - -Wnoncanonical-monadfail-instances
 
 library:
   source-dirs: src
